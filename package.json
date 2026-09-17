@@ -1,0 +1,27 @@
+{
+  "name": "proworks",
+  "version": "0.1.0",
+  "description": "Non-white-collar LinkedIn for India - Dignity, Confidence, and Ability for Skilled Trade Professionals",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node test/smoke.test.js",
+    "preview": "wrangler pages dev dist",
+    "deploy": "node scripts/build.js && wrangler pages deploy dist --project-name proworks"
+  },
+  "keywords": [
+    "proworks",
+    "skilled-trades",
+    "india",
+    "blue-collar",
+    "technicians",
+    "mechanics",
+    "artisans",
+    "cloudflare-pages"
+  ],
+  "author": "Raj Aramudan <nodesman.raj@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "wrangler": "^4.92.0"
+  }
+}

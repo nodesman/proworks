@@ -1,0 +1,215 @@
+{
+  "trades": [
+    { "id": "all", "label": "All Trades", "count": 6 },
+    { "id": "electrician", "label": "Industrial & Domestic Electricians", "count": 1 },
+    { "id": "mechanic", "label": "Automotive & Diesel Mechanics", "count": 1 },
+    { "id": "carpenter", "label": "Precision Woodworkers & Carpenters", "count": 1 },
+    { "id": "welder", "label": "Fabricators & TIG/MIG Welders", "count": 1 },
+    { "id": "mason", "label": "Master Masons & Tile Specialists", "count": 1 },
+    { "id": "supervisor", "label": "Site & Maintenance Supervisors", "count": 1 }
+  ],
+  "workers": [
+    {
+      "id": "pw-101",
+      "name": "Murugan Velusamy",
+      "nativeName": "முருகன் வேலுசாமி",
+      "trade": "electrician",
+      "tradeTitle": "Master Industrial Electrician & PLC Panel Wireman",
+      "experienceYears": 14,
+      "location": "Coimbatore, Tamil Nadu",
+      "industrialZone": "SIDCO Industrial Estate, Kurichi",
+      "verifiedStatus": "ProID Verified",
+      "certifications": [
+        "NCVT Electrician Grade-1",
+        "Tamil Nadu Electrical Inspectorate Class-C License"
+      ],
+      "badges": ["Factory HT/LT Wiring", "3-Phase Motor Rewinding", "VFD Calibration"],
+      "dailyRate": "₹1,200 - ₹1,500 / day",
+      "rating": 4.9,
+      "completedJobs": 142,
+      "phone": "+91 94432 01842",
+      "whatsapp": "+919443201842",
+      "bio": "14 years of uninterrupted industrial panel fabrication, substation maintenance, and factory distribution wiring. Uncompromising commitment to electrical safety standards and zero down-time plant wiring under Aram (அறம்).",
+      "portfolio": [
+        {
+          "title": "500kVA Transformer Distribution Board",
+          "client": "Sakthi Auto Components",
+          "year": "2025"
+        },
+        {
+          "title": "Full Textile Mill Automated Sensor Loom Wiring",
+          "client": "Lakshmi Mills Ancillary",
+          "year": "2024"
+        }
+      ]
+    },
+    {
+      "id": "pw-102",
+      "name": "Gurpreet Singh",
+      "nativeName": "ਗੁਰਪ੍ਰੀਤ ਸਿੰਘ",
+      "trade": "mechanic",
+      "tradeTitle": "Lead Commercial Diesel & Hydraulic Mechanic",
+      "experienceYears": 18,
+      "location": "Ludhiana, Punjab",
+      "industrialZone": "Focal Point Phase V",
+      "verifiedStatus": "ProID Verified",
+      "certifications": [
+        "ITI Motor Mechanic (DGT New Delhi)",
+        "Bosch Common Rail Diesel Injection Certified"
+      ],
+      "badges": ["BS-VI Engine Overhaul", "Tata / Ashok Leyland Expert", "Hydraulic Rig Specialist"],
+      "dailyRate": "₹1,500 - ₹1,800 / day",
+      "rating": 5.0,
+      "completedJobs": 284,
+      "phone": "+91 98141 55902",
+      "whatsapp": "+919814155902",
+      "bio": "Specialized in heavy commercial fleet diesel engine rebuilds, turbocharger timing, and earth-moving hydraulic diagnostics. Equipped with field diagnostic scanners for on-site breakdown recovery.",
+      "portfolio": [
+        {
+          "title": "Fleet Rebuild of 22 Ashok Leyland 2820 Tippers",
+          "client": "National Highway Logistics",
+          "year": "2025"
+        },
+        {
+          "title": "JCB 3DX Hydraulic Valve Block Reconstruction",
+          "client": "Punjab Agro Infra",
+          "year": "2024"
+        }
+      ]
+    },
+    {
+      "id": "pw-103",
+      "name": "M. Selvakumar",
+      "nativeName": "எம். செல்வக்குமார்",
+      "trade": "carpenter",
+      "tradeTitle": "Artisan Architectural Woodworker & Acoustic Paneler",
+      "experienceYears": 12,
+      "location": "Chennai, Tamil Nadu",
+      "industrialZone": "Ambattur Industrial Estate",
+      "verifiedStatus": "ProID Verified",
+      "certifications": [
+        "Furniture & Fittings Skill Council (FFSC) Master Craftsman"
+      ],
+      "badges": ["Teak & Hardwood Joinery", "Acoustic Wall Panels", "Modular CNC Assembly"],
+      "dailyRate": "₹1,100 - ₹1,400 / day",
+      "rating": 4.85,
+      "completedJobs": 98,
+      "phone": "+91 98409 77215",
+      "whatsapp": "+919840977215",
+      "bio": "Crafting bespoke wood joinery, heritage temple woodwork, modern auditorium acoustic baffles, and millimeter-accurate commercial interior framing without superficial shortcuts.",
+      "portfolio": [
+        {
+          "title": "120-Seat Studio Acoustic Wall Panel Installation",
+          "client": "AVM Soundstage Subcontract",
+          "year": "2025"
+        },
+        {
+          "title": "Traditional Rosewood Pillar Restoration",
+          "client": "Private Estate, Mylapore",
+          "year": "2024"
+        }
+      ]
+    },
+    {
+      "id": "pw-104",
+      "name": "Brijeshwar Rao",
+      "nativeName": "బ్రిజేశ్వర్ రావు",
+      "trade": "welder",
+      "tradeTitle": "High-Pressure Pipe & Precision TIG/MIG Fabricator",
+      "experienceYears": 16,
+      "location": "Visakhapatnam, Andhra Pradesh",
+      "industrialZone": "Auto Nagar, Gajuwaka",
+      "verifiedStatus": "ProID Verified",
+      "certifications": [
+        "ASME Section IX 6G Pipe Welding Qualification",
+        "Indian Boiler Regulations (IBR) Certified Welder"
+      ],
+      "badges": ["IBR Boiler Certified", "SS-316 Food Grade Piping", "Structural Truss Fabrication"],
+      "dailyRate": "₹1,600 - ₹2,000 / day",
+      "rating": 4.95,
+      "completedJobs": 175,
+      "phone": "+91 94901 33481",
+      "whatsapp": "+919490133481",
+      "bio": "Ex-shipyard certified 6G pipe welder specializing in cryogenic lines, chemical refinery stainless steel tubes, and seismic structural truss welding tested via X-ray radiography.",
+      "portfolio": [
+        {
+          "title": "Pharmaceutical API Steam Line Pipe Grid (IBR)",
+          "client": "Pharma City SEZ",
+          "year": "2025"
+        },
+        {
+          "title": "Heavy Crane Gantry Girder Welding",
+          "client": "Vizag Port Ancillary",
+          "year": "2024"
+        }
+      ]
+    },
+    {
+      "id": "pw-105",
+      "name": "Ramesh Chandra Nayak",
+      "nativeName": "রমেশ চন্দ্র নায়েক",
+      "trade": "mason",
+      "tradeTitle": "Master Structural Mason & Heritage Stone Craftsman",
+      "experienceYears": 20,
+      "location": "Bhubaneswar, Odisha",
+      "industrialZone": "Chandaka Industrial Estate",
+      "verifiedStatus": "ProID Verified",
+      "certifications": [
+        "National Skill Development Corporation (NSDC) Level-4 Mason"
+      ],
+      "badges": ["Khondalite Stone Carving", "Reinforced Brick Arch Construction", "Waterproof Basement Rafting"],
+      "dailyRate": "₹1,000 - ₹1,300 / day",
+      "rating": 4.9,
+      "completedJobs": 210,
+      "phone": "+91 97780 44129",
+      "whatsapp": "+919778044129",
+      "bio": "2 decades of precision structural masonry, plumb-line stone cladding, water-retaining basement sump construction, and authentic sandstone lintel arches built to endure centuries.",
+      "portfolio": [
+        {
+          "title": "Hand-Cut Sandstone Entrance Facade",
+          "client": "Odisha Heritage Cultural Centre",
+          "year": "2025"
+        },
+        {
+          "title": "Deep Basement Waterproof Brick Retaining Wall",
+          "client": "Infocity Tower Construction",
+          "year": "2024"
+        }
+      ]
+    },
+    {
+      "id": "pw-106",
+      "name": "Kishore Kadam",
+      "nativeName": "किशोर कदम",
+      "trade": "supervisor",
+      "tradeTitle": "Senior Mechanical Turnaround & Safety Site Supervisor",
+      "experienceYears": 22,
+      "location": "Pune, Maharashtra",
+      "industrialZone": "Bhosari MIDC",
+      "verifiedStatus": "ProID Verified",
+      "certifications": [
+        "Diploma in Mechanical Engineering (MSBTE)",
+        "NEBOSH IGC Safety in Industrial Workplaces"
+      ],
+      "badges": ["OSHA/NEBOSH Safety Compliance", "50+ Crew Gang Management", "Zero-Accident Safety Record"],
+      "dailyRate": "₹2,200 - ₹2,800 / day",
+      "rating": 5.0,
+      "completedJobs": 320,
+      "phone": "+91 98220 89104",
+      "whatsapp": "+919822089104",
+      "bio": "Experienced plant turnaround supervisor leading teams of 40-80 skilled tradesmen across automotive press shops, foundry lines, and manufacturing facilities. Zero lost-time injury record over 7 years.",
+      "portfolio": [
+        {
+          "title": "Annual Press Line Preventive Overhaul (14-day turnaround)",
+          "client": "Chakan Auto Component OEM",
+          "year": "2025"
+        },
+        {
+          "title": "Robotic Welding Cell Infrastructure Installation",
+          "client": "MIDC Bhosari Industrial Park",
+          "year": "2024"
+        }
+      ]
+    }
+  ]
+}

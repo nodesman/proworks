@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proworks | The Sovereign Platform for India's Skilled Trade Masters</title>
+  <meta name="description" content="Non-white-collar professional identity & direct hiring rail for skilled electricians, mechanics, fabricators, carpenters, and supervisors across India.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #060608;
+      --bg-card: #0e0e12;
+      --bg-card-hover: #15151c;
+      --border-subtle: #22222b;
+      --border-accent: #d97706;
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      --brand-amber: #f59e0b;
+      --brand-gold: #d97706;
+      --brand-emerald: #10b981;
+      --brand-blue: #38bdf8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-primary);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-subtle);
+      background-color: rgba(6, 6, 8, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+
+    .brand-logo {
+      width: 38px;
+      height: 38px;
+      background: linear-gradient(135deg, var(--brand-gold), #b45309);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      color: #000;
+      box-shadow: 0 0 15px rgba(217, 119, 6, 0.3);
+    }
+
+    .brand-text h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .brand-sub {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .badge-imperial {
+      background-color: rgba(217, 119, 6, 0.12);
+      border: 1px solid rgba(217, 119, 6, 0.35);
+      color: var(--brand-amber);
+      padding: 0.3rem 0.65rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      font-family: 'JetBrains Mono', monospace;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .hero-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 2.5rem;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #121218;
+      border: 1px solid var(--border-subtle);
+      padding: 0.4rem 0.9rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-badge span.dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--brand-emerald);
+      box-shadow: 0 0 8px var(--brand-emerald);
+    }
+
+    .hero-title {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: 2.75rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
+      background: linear-gradient(180deg, #ffffff 40%, #a1a1aa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-desc {
+      max-width: 720px;
+      margin: 0 auto 2.5rem;
+      font-size: 1.125rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .stat-ribbon {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: left;
+    }
+
+    .stat-item h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.6rem;
+      color: var(--brand-amber);
+    }
+
+    .stat-item p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-top: 0.2rem;
+    }
+
+    .controls-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem 2rem;
+    }
+
+    .search-filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--bg-card);
+      padding: 1rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+    }
+
+    .search-input-wrap {
+      flex: 1;
+      min-width: 260px;
+      position: relative;
+    }
+
+    .search-input-wrap input {
+      width: 100%;
+      background-color: var(--bg-base);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+      padding: 0.75rem 1rem 0.75rem 2.5rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-input-wrap input:focus {
+      border-color: var(--brand-gold);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 0.85rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .trade-pills {
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      padding: 0.5rem 0;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      scrollbar-width: thin;
+    }
+
+    .trade-pill {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      padding: 0.45rem 0.9rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+
+    .trade-pill:hover,
+    .trade-pill.active {
+      background-color: var(--brand-gold);
+      color: #000;
+      font-weight: 600;
+      border-color: var(--brand-gold);
+    }
+
+    .profiles-grid {
+      max-width: 1200px;
+      margin: 2rem auto 4rem;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .profile-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--brand-gold);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .worker-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #1f2937, #111827);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--brand-amber);
+    }
+
+    .proid-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background-color: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--brand-emerald);
+      padding: 0.25rem 0.55rem;
+      border-radius: 9999px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .worker-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.2rem;
+    }
+
+    .worker-native-name {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .trade-title {
+      color: var(--brand-amber);
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+    }
+
+    .meta-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .meta-tag {
+      background-color: var(--bg-base);
+      border: 1px solid var(--border-subtle);
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      color: var(--text-secondary);
+    }
+
+    .worker-bio {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .cert-section {
+      background-color: rgba(255, 255, 255, 0.02);
+      border-left: 2px solid var(--brand-gold);
+      padding: 0.6rem 0.8rem;
+      margin-bottom: 1.25rem;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .cert-section h4 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .cert-list {
+      list-style: none;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+
+    .card-footer {
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .daily-wage {
+      font-size: 0.85rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--brand-emerald);
+      font-weight: 600;
+    }
+
+    .contact-actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .btn-contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.45rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .btn-call {
+      background-color: #27272a;
+      color: #fff;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .btn-call:hover {
+      background-color: #3f3f46;
+    }
+
+    .btn-whatsapp {
+      background-color: #065f46;
+      color: #34d399;
+      border: 1px solid rgba(52, 211, 153, 0.3);
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #047857;
+      color: #fff;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 3rem 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--brand-gold);
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+      .profiles-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <div class="brand-logo">P</div>
+        <div class="brand-text">
+          <h1>Proworks <span style="font-size: 0.9rem; color: var(--brand-gold);">ப்ரோவர்க்ஸ்</span></h1>
+          <div class="brand-sub">Sovereign Skilled Trade Network</div>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <span class="badge-imperial">Under Aram (அறம்)</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Zero Middleman Arbitrage • Verifiable Technical Credentials
+      </div>
+      <h2 class="hero-title">Dignity, Confidence & Trade Mastery</h2>
+      <p class="hero-desc">
+        India's non-white-collar professional rail. Celebrating master technicians, precision fabricators, certified electricians, mechanics, and site supervisors with tamper-resistant credentials, photographic portfolios, and direct hiring rails.
+      </p>
+
+      <div class="stat-ribbon">
+        <div class="stat-item">
+          <h3>100% Direct</h3>
+          <p>Zero contractor commission or wage extraction</p>
+        </div>
+        <div class="stat-item">
+          <h3>ProID Verified</h3>
+          <p>ITI, NCVT, and government trade certifications</p>
+        </div>
+        <div class="stat-item">
+          <h3>Sub-100ms</h3>
+          <p>Edge substrate built for Tier-2/3 mobile bandwidth</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="controls-container">
+      <div class="search-filter-bar">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search by trade, city, industrial cluster, or tool certification...">
+        </div>
+        <div style="font-size: 0.85rem; color: var(--text-muted); font-family: 'JetBrains Mono', monospace;" id="resultCount">
+          Showing 6 Verified Masters
+        </div>
+      </div>
+    </div>
+
+    <div class="trade-pills" id="tradePills">
+      <!-- Injected dynamically -->
+    </div>
+
+    <section class="profiles-grid" id="profilesGrid">
+      <!-- Profiles injected dynamically -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Proworks • Powered by Cloudflare Edge & ProID.id Sovereign Identity Rail</p>
+    <p style="margin-top: 0.5rem; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem;">
+      Orchestrated under Aram (அறம்) in the Sovereign Foundry • Workspace: <code>aram-imperial</code>
+    </p>
+  </footer>
+
+  <script>
+    let appData = { trades: [], workers: [] };
+    let activeTrade = 'all';
+    let searchQuery = '';
+
+    async function init() {
+      try {
+        const resp = await fetch('/data/trades.json');
+        appData = await resp.json();
+      } catch (err) {
+        console.warn('Using fallback data', err);
+        // Fallback embedded data if fetched directly via file://
+        appData = window.__EMBEDDED_DATA__ || { trades: [], workers: [] };
+      }
+      renderPills();
+      renderProfiles();
+      setupEvents();
+    }
+
+    function renderPills() {
+      const pillsContainer = document.getElementById('tradePills');
+      pillsContainer.innerHTML = appData.trades.map(t => `
+        <button class="trade-pill ${t.id === activeTrade ? 'active' : ''}" data-trade="${t.id}">
+          ${t.label} (${t.count})
+        </button>
+      `).join('');
+    }
+
+    function renderProfiles() {
+      const grid = document.getElementById('profilesGrid');
+      const countEl = document.getElementById('resultCount');
+      
+      const filtered = appData.workers.filter(w => {
+        const matchesTrade = (activeTrade === 'all' || w.trade === activeTrade);
+        const q = searchQuery.toLowerCase().trim();
+        const matchesQuery = !q || (
+          w.name.toLowerCase().includes(q) ||
+          w.nativeName.toLowerCase().includes(q) ||
+          w.tradeTitle.toLowerCase().includes(q) ||
+          w.location.toLowerCase().includes(q) ||
+          w.industrialZone.toLowerCase().includes(q) ||
+          w.badges.some(b => b.toLowerCase().includes(q)) ||
+          w.certifications.some(c => c.toLowerCase().includes(q))
+        );
+        return matchesTrade && matchesQuery;
+      });
+
+      countEl.textContent = `Showing ${filtered.length} Verified Master${filtered.length === 1 ? '' : 's'}`;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: var(--text-muted);">
+            <h3>No trade masters found matching your criteria.</h3>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Try adjusting your search terms or selecting 'All Trades'.</p>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(w => {
+        const initials = w.name.split(' ').map(p => p[0]).join('').slice(0, 2);
+        return `
+          <article class="profile-card">
+            <div>
+              <div class="card-top">
+                <div class="worker-avatar">${initials}</div>
+                <div class="proid-badge">
+                  <span>✓</span> ${w.verifiedStatus}
+                </div>
+              </div>
+
+              <h3 class="worker-name">${w.name}</h3>
+              <div class="worker-native-name">${w.nativeName}</div>
+              <div class="trade-title">${w.tradeTitle}</div>
+
+              <div class="meta-pills">
+                <span class="meta-tag">📍 ${w.location}</span>
+                <span class="meta-tag">🏭 ${w.industrialZone}</span>
+                <span class="meta-tag">⏱️ ${w.experienceYears} Yrs Exp</span>
+                <span class="meta-tag">⭐ ${w.rating} (${w.completedJobs} jobs)</span>
+              </div>
+
+              <p class="worker-bio">${w.bio}</p>
+
+              <div class="cert-section">
+                <h4>Verified Certifications & Skills</h4>
+                <ul class="cert-list">
+                  ${w.certifications.map(c => `<li>• ${c}</li>`).join('')}
+                </ul>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="daily-wage">${w.dailyRate}</div>
+              <div class="contact-actions">
+                <a href="tel:${w.phone}" class="btn-contact btn-call" title="Direct Phone Call">📞 Call</a>
+                <a href="https://wa.me/${w.whatsapp}?text=Hello%20${encodeURIComponent(w.name)},%20I%20found%20your%20Proworks%20profile%20and%20would%20like%20to%20discuss%20a%20project." 
+                   target="_blank" rel="noopener noreferrer" class="btn-contact btn-whatsapp" title="Direct WhatsApp">💬 WhatsApp</a>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function setupEvents() {
+      document.getElementById('tradePills').addEventListener('click', (e) => {
+        if (e.target.classList.contains('trade-pill')) {
+          activeTrade = e.target.dataset.trade;
+          renderPills();
+          renderProfiles();
+        }
+      });
+
+      document.getElementById('searchInput').addEventListener('input', (e) => {
+        searchQuery = e.target.value;
+        renderProfiles();
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
