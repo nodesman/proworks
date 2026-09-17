@@ -57,3 +57,12 @@ Project ID: `67beb6df-71b1-4651-9542-142b0c005ae7`
   - On-screen QR code generation for desktop-to-mobile payment scanning.
   - Transparent payment milestone states (Advance Deposit, Material Advance, Final Handover).
   - 0% commission: 100% of the funds go directly into the worker's bank account.
+
+## Epic 7: Work Progress & Pre-Emptive Proof Tracker
+- **Plane Module ID**: `3ff9a43e-290e-4cad-87cc-ed24804c7f54`
+- **Objective**: Lightweight WhatsApp-friendly job milestone & visual progress tracker. Enables the pro to log start conditions, daily milestones, and completed handovers with client sign-off, creating irrefutable proof of work without operational arbitration overhead.
+- **Key Vectors**:
+  - 1-tap scope agreement (WhatsApp card before work starts).
+  - Timestamped before/after condition lock photos preventing bogus damage claims.
+  - Milestone checklist (e.g., Rough In, Wiring, Board Fitting, Final Power Test).
+  - 1-tap WhatsApp client handover acknowledgment card with remaining balance settlement.
